@@ -18,12 +18,10 @@ digit_str = sys.argv[1]
 
 try:
     digit = int(digit_str)
+    digit_translation = translation_table[digit]
 except ValueError as e:
     print('this is not an integer:', digit_str)
     sys.exit(1)
-    
-try:
-    digit_translation = translation_table[digit]
 except KeyError:
     print('this is not a digit:', digit)
     sys.exit(2)
