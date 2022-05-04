@@ -25,5 +25,8 @@ except ValueError as e:
 except KeyError:
     print('this is not a digit:', digit)
     sys.exit(2)
+except Exception as e:
+    print('something weird happened:', e)
+    sys.exit(42)
 
 print(digit_translation)
