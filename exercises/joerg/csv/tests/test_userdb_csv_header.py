@@ -62,4 +62,3 @@ def test_fullname(tmpdir):
 
     users = userdb_csv.read_csv_header(filename)
     assert users[0].fullname == 'Caro Faschingbauer'
-
